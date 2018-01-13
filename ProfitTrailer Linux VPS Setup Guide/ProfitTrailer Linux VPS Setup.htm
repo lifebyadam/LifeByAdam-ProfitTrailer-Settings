@@ -1,0 +1,249 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.UnresolvedMention1
+	{mso-style-name:"Unresolved Mention1";
+	color:gray;
+	background:#E6E6E6;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:22.0pt;line-height:107%'>Setup VPS at Vultr</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%;
+color:black'>Recommended VPS</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%;
+color:#4472C4'>Get a VPS: <a href="http://bit.ly/lbavultr">http://bit.ly/lbavultr</a></span></b></p>
+
+<p class=MsoNormal><span style='color:black'>Vultr Cloud Computer (VC2)<br>
+1cpu<br>
+40GB<br>
+2GB RAM<br>
+Ubuntu 16.04 64bit</span></p>
+
+<p class=MsoNormal><span style='color:#4472C4'>Download MobaXterm for SSH
+access to your VPS and simple file transfer/editing:<br>
+<a href="https://mobaxterm.mobatek.net/download.html">https://mobaxterm.mobatek.net/download.html</a></span></p>
+
+<p class=MsoNormal><b><span style='color:#4472C4'>My ProfitTrailer Settings:</span></b><span
+style='color:#4472C4'> <br>
+<a href="https://github.com/lifebyadam/LifeByAdam-ProfitTrailer-Settings">https://github.com/lifebyadam/LifeByAdam-ProfitTrailer-Settings</a></span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Login
+via SSH as root</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>Use mobaxterm to
+connect to your VPS using the IP provided by Vultr and the root password
+provided by them</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Create
+New User</b></p>
+
+<p class=MsoNormal style='text-indent:.5in'>                adduser “username”</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Add
+user to sudo (give admin rights)</b></p>
+
+<p class=MsoNormal style='text-indent:.5in'>                usermod -aG sudo
+“username”</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><b>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Logout
+of root account and login with new user account</b></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><b>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Install
+Unzip</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>sudo apt-get
+install unzip</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Install
+java</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>sudo apt-get
+install default-jre</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Install
+Nodejs</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>sudo apt-get
+install nodejs</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Fix
+Nodejs</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>sudo ln -s
+/usr/bin/nodejs /usr/bin/node</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b>Install
+npm</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>sudo apt-get
+install npm</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b>10.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></b><b>Install PM2</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>sudo npm install
+pm2@latest -g</p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b>11.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></b><b>Download
+ProfitTrailer</b></p>
+
+<p class=MsoNormal>wget <a
+href="https://github.com/taniman/profit-trailer/releases/download/v1.2.6.10/ProfitTrailer.zip">https://github.com/taniman/profittrailer/releases/download/v1.2.6.10/ProfitTrailer.zip</a></p>
+
+<p class=MsoNormal>unzip ProfitTrailer.zip</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><b>12.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></b><b>Edit your
+config files, pairs etc.</b></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><b>13.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></b><b>Running the bot</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>pm2 start
+pm2-ProfitTrailer.json</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b>14.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></b><b>Set the bot to
+start on startup if the server restarts</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>pm2 save</p>
+
+<p class=MsoNormal style='margin-left:1.0in'>pm2 startup</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><b>15.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></b><b>Access Web
+Monitor Panel</b></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in'>You should be able
+to access the panel at http://serverip:8081</p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:107%'>Notes:</span></b></p>
+
+<p class=MsoNormal><b>Other Commands</b></p>
+
+<p class=MsoNormal style='text-indent:.5in'><b>Check on the bot log</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>pm2 log 0</p>
+
+<p class=MsoNormal>                <b>Stop the bot</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>pm2 stop 0</p>
+
+<p class=MsoNormal style='text-indent:.5in'><b>Restart the bot</b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'>pm2 reload 2</p>
+
+<p class=MsoNormal><b>Additional Resources:</b></p>
+
+<p class=MsoNormal style='text-indent:.5in'><b>Securing SSH:</b></p>
+
+<p class=MsoNormal style='text-indent:.5in'><b>                </b><a
+href="http://linux-sys-adm.com/ubuntu-16.04-lts-how-to-install-and-configure-ssh/">http://linux-sys-adm.com/ubuntu-16.04-lts-how-to-install-and-configure-ssh/</a></p>
+
+<p class=MsoNormal style='text-indent:.5in'><b>Securing a VPS: </b></p>
+
+<p class=MsoNormal style='text-indent:.5in'><b>                </b><a
+href="https://linode.com/docs/security/securing-your-server/">https://linode.com/docs/security/securing-your-server/</a></p>
+
+</div>
+
+</body>
+
+</html>
